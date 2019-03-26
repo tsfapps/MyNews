@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_cat_blog_item"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="4dp"
+        android:elevation="22dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_cat_blog"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:layout_toEndOf="@id/iv_cat_blog"
+                android:layout_alignParentTop="true"
+                android:id="@+id/tv_cat_blog_views"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="views"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+            android:id="@+id/tv_cat_blog_title"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Title"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+                android:maxLength="100"
+                android:layout_toEndOf="@+id/iv_cat_blog"
+            android:layout_below="@+id/tv_cat_blog_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_cat_blog_date"
+                android:textSize="8sp"
+                android:textColor="@color/colorGrey"
+                android:text="Date"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SmallSp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
